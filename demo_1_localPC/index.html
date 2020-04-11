@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Realtime communication with WebRTC</title>
+</head>
+
+<body>
+  <h1>Realtime communication with WebRTC</h1>
+  
+  <div>
+    <p>Publisher</p>
+    <video id="localVideo" autoplay playsinline></video>
+    <div>
+      <button id="pubStartButton">PubStart</button>
+      <button id="callButton" disabled="true">Call</button>
+      <button id="hangupButton" disabled="true">Hang Up</button>
+    </div>
+  </div>
+  <div>
+      <p>Subscriber</p>
+      <video id="remoteVideo" autoplay playsinline></video>
+      <div>
+        <button id="subStartButton">SubStart</button>
+      </div>
+  </div>
+  
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <!-- socket io client -->
+  <script src="js/socket.io.js"></script>
+  <script src="js/client.js"></script>
+</body>
+</html>
